@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+:root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  /* background: linear-gradient(220.55deg, #8fff85 0%, #39a0ff 100%); */
+   position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/logo/Icono-transparente.png'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    font-family: "Overlock", sans-serif;
+}
+
+.contenedor::before {
+    content: 'Marca de Agua';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    opacity: 0.3; /* Ajusta la opacidad según tus preferencias */
+    z-index: -1; /* Para que la marca de agua esté detrás del contenido */
+  }
+
+/* ====== Inicio Header ====== */
+
+.header_main {
+  width: 100%;
+  position: relative;
+}
+
+.container_header {
+  height: 125px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.limite_menu {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #f2f2f2;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.header_main .menu_desktop {
+  background-color: #f2f2f2;
+  height: 125px;
+  opacity: 0.8;
+}
+
+.header_main .limite_menu {
+  max-width: 100%;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  height: 95%;
+  flex-grow: 1;
+  
+}
+
+.logo img {
+  max-width: 80%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 4px 10px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: black;
+  font-size: 3rem;
+  font-family: "Bad Script", cursive;
+   font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: 0;
+  left: 3rem;
+  bottom: 0;
+  margin: auto;
+}
+
+h2 {
+  padding: 0.7rem;
+  color: black;
+}
+
+.menu_desktop {
+  position: fixed;
+  z-index: 1100;
+  width: 100%;
+  left: 0px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.main_menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header_main .main_menu > li {
+  margin: 0 17px -8px !important;
+}
+
+a {
+  color: rgb(102,102,102);
+  text-decoration: none;
+  padding: 0.2em 0.1em;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+span {
+  margin-right: 5px;
+}
+
+span > a {
+  color: rgb(255, 255, 255);
+}
+
+.buy_btn {
+  font-size: 14px;
+  line-height: 1.7;
+  width: 7%;
+  color: rgb(255, 255, 255);
+  min-height: 50px;
+  padding: 0.1em;
+  margin-right: 45px;
+  vertical-align: middle;
+  display: inline-flex;
+  background-color: rgb(165, 42, 42);
+  justify-content: center;
+  align-items: center;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+/* ====== Fin Header ======*/
+
+/* Inicio Contenido Principal */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  ); /* Cambia 200px al tamaño deseado */
+  grid-gap: 10px; /* Espacio entre las imágenes */
+  justify-items: center;
+  margin-bottom: 0.8em;
+}
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fin Contenido Principal */
+
+/* ====== Inicio Footer ======*/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  background-color: #393e41;
+  height: 125px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.footer_nav {
+  text-align: center;
+}
+
+.footer ul {
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #666666;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-whatsapp {
+  color: #666666;
+  padding-left: 0.25em;
+  font-size: 1.5em;
+}
+
+/* ====== Fin footer ======*/
