@@ -183,7 +183,6 @@ span>a {
 /* Inicio Contenido Principal */
 
 .grid-container {
-
     display: grid;
     grid-template-columns: repeat(auto-fill,
             minmax(400px, 1fr));
@@ -206,7 +205,6 @@ span>a {
 /* ====== Inicio Footer ======*/
 
 .footer {
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -242,5 +240,4 @@ p.copy {
     padding-left: 0.25em;
     font-size: 1.5em;
 }
-
 /* ====== Fin footer ======*/
