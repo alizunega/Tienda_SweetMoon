@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 * {
+
   margin: 0;
   padding: 0;
   /* border: 1px solid red; */
@@ -17,6 +18,7 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url('./img/logo/Icono-transparente.png'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -30,13 +32,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
+
     opacity: 0.3; /* Ajusta la opacidad según tus preferencias */
     z-index: -1; /* Para que la marca de agua esté detrás del contenido */
   }
 
+
 /* ====== Inicio Header ====== */
 
 .header_main {
+
   width: 100%;
   position: relative;
 }
@@ -167,6 +172,7 @@ span > a {
 
 .m-r-10 {
   margin-right: 10px;
+
 }
 
 /* ====== Fin Header ======*/
@@ -174,6 +180,7 @@ span > a {
 /* Inicio Contenido Principal */
 
 .grid-container {
+
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
@@ -187,6 +194,7 @@ span > a {
   max-width: 100%;
   height: auto;
   display: block;
+
 }
 
 /* Fin Contenido Principal */
@@ -194,6 +202,7 @@ span > a {
 /* ====== Inicio Footer ======*/
 
 .footer {
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -218,14 +227,17 @@ p {
   font-size: 1em;
   text-align: center;
   margin-top: 0.5em;
+
 }
 
 .fa-instagram,
 .fa-facebook,
 .fa-whatsapp {
+
   color: #666666;
   padding-left: 0.25em;
   font-size: 1.5em;
 }
 
 /* ====== Fin footer ======*/
+
