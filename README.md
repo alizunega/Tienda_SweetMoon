@@ -5,7 +5,7 @@ Tienda de Pastelería
 
 ##Descripción
 Proyecto frontend creado para el Curso FullStack JS/Node.js de Codo a Codo
-1er cuatrimestre de 2024
+1er semestre de 2024
 
 ## Despliegue 📦
 _En proceso de desarrollo_
@@ -19,5 +19,5 @@ _En proceso de desarrollo_
 ## Autores ✒️
 + Alicia Zuñega - @alizunega
 + Jorge Varela - @osvaldovarela
-+ Luciana Mariel - La Valle @lulaMariel 
++ Luciana Mariel La Valle - @lulaMariel 
 + Natalia Forte - @natiforte
