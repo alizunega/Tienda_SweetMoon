@@ -89,12 +89,14 @@ p.price {
 
 #modal {
     border-radius: 7px;
-    width: 400px;
-    height: 200px;
+    width: 350px;
+    height: 220px;
     top: 40%;
     left: 40%;
+
     display: flexbox;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
@@ -112,15 +114,14 @@ p.price {
 
 }
 
+/* animacion del icono en el pop-up */
 #modal svg {
-    animation: reboteIn 1s 2;
+    animation: reboteSVG 1s 1;
 
 }
 
-
 /* Creamos la animación (con keyframes) */
-
-@keyframes reboteIn {
+@keyframes reboteSVG {
 
     0% {
         opacity: 0;
@@ -129,7 +130,7 @@ p.price {
 
     50% {
         opacity: 1;
-        transform: scale(1.2);
+        transform: scale(1.3);
     }
 
     70% {
@@ -138,7 +139,5 @@ p.price {
     }
 
 }
-
-
 
 /* ===== Fin PopUp ===== */
