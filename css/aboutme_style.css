@@ -1,0 +1,22 @@
+/* ====== Estilos para aboutme ===== */
+
+.aboutme {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: black;
+}
