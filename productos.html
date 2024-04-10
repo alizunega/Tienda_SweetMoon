@@ -17,44 +17,22 @@
 
 <body>
     <!--Inicio Header -->
-    <header class="header_main">
-        <div class="container_header">
-            <div class="menu_desktop">
-                <div class="limite_menu">
-                    <div class="logo">
-                        <a href="./index.html">
-                            <img src="./img/logo/logo.png" alt="logo" />
-                        </a>
-                        <h1>Sweet Moon</h1>
-                    </div>
-                    <div class="nav">
-                        <ul class="main_menu">
-                            <li style="margin-right: 11px !important">
-                                <a href="index.html">Inicio</a>
-                            </li>
-                            <li style="margin-right: 11px !important">
-                                <a href="#">Acerca de mí</a>
-                            </li>
-                            <li style="margin-right: 11px !important">
-                                <a href="productos.html">Productos</a>
-                            </li>
-                            <li style="margin-right: 11px !important">
-                                <a href="#">Contacto</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- Pedido -->
-                    <div class="buy_btn" style="margin-left: 50px !important">
-                        <span>
-                            <i class="fa fa-shopping-cart fs-18 m-r-10" aria-hidden="true" title="Carrito"></i>
-                            <a href="#">Pedido</a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div class="topnav fixed-top" id="myTopnav">
+      <a href="./index.html" >
+        <h1>Sweet Moon</h1>
+      </a>
+      <a href="#" class="active">Home</a>
+      <a href="#" target="_blank">Acerca de mí</a>
+      <a href="#" target="_blank">Productos</a>
+      <a href="#" target="_blank">Contacto</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a id="pedido" href="#"
+        >Pedido
+        <i class="fa fa-shopping-cart" aria-hidden="true" title="Carrito"></i
+      ></a>
+    </div>
     <!-- Fin Header-->
 
     <!-- Inicio Grilla de Productos -->
@@ -282,7 +260,7 @@
     <!--  Footer -->
     <footer class="footer">
         <div class="footer_nav">
-            <ul class="main_menu">
+            <ul class="main_menu_footer">
                 <li style="margin-right: 11px !important">
                     <a href="/index.html">Inicio</a>
                 </li>
