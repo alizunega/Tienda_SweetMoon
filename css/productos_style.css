@@ -3,7 +3,6 @@
 .container-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
     padding-top: 8.5rem;
 
@@ -141,3 +140,156 @@ p.price {
 }
 
 /* ===== Fin PopUp ===== */
+
+/*=== estilo para pequeños dispositivos ===*/
+@media only screen and (max-width: 600px) {
+
+    /* ====== Estilos para galeria ===== */
+
+    .container-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        top: 0;
+        gap: 1rem;
+        padding-top: 8rem;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+
+
+    .item {
+        border-radius: 7px;
+        background-color: hwb(0 98% 0%);
+        height: 100vh;
+        top: 0;
+        border-bottom: 1px solid #565555;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item:hover {
+        box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20)
+    }
+
+
+
+    .item img {
+        width: 100%;
+        height: 20%;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: all .5s;
+    }
+
+
+    .info-product {
+        padding: 15px 30px;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+    }
+
+    /* efecto en la imagen */
+    .item figure {
+        overflow: hidden;
+    }
+
+    .item:hover img {
+        transform: scale(1.2);
+    }
+
+
+    .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #F8b195;
+
+    }
+
+    .button:hover {
+        background-color: #f17d4f;
+        color: white;
+    }
+
+    p.price {
+        color: black;
+        font-weight: bolder;
+        padding-left: 1em;
+        font-size: 18px;
+    }
+
+
+    /* ====== Fin galeria ===== */
+
+    /* ===== PopUp ===== */
+
+    #modal::backdrop {
+        background-color: rgba(0, 0, 0, .70);
+
+    }
+
+    #modal {
+        border-radius: 7px;
+        width: 100%;
+        top: 20%;
+        left: 5%;
+        display: flexbox;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+
+    #modal button {
+        background-color: #f7a17f;
+        border-radius: 5px;
+        color: aliceblue;
+        padding: 10px 10px;
+        border: none;
+        outline: none;
+        font-size: inherit;
+
+    }
+
+    /* animacion del icono en el pop-up */
+    #modal svg {
+        animation: reboteSVG 1s 1;
+
+    }
+
+    /* Creamos la animación (con keyframes) */
+    @keyframes reboteSVG {
+
+        0% {
+            opacity: 0;
+            transform: scale(.3);
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1.3);
+        }
+
+        70% {
+            opacity: 1;
+            transform: scale(0.9);
+        }
+
+    }
+
+    /* ===== Fin PopUp ===== */
+
+}
+
+@media only screen and (min-width: 601px) {}
