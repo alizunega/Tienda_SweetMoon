@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
-
     <link rel="shortcut icon" href="./img/logo/logo.ico" />
+    <link rel="stylesheet" href="./css/productos_style.css">
     <link rel="stylesheet" href="./style.css" />
-
-    <title>Tienda Sweet Moon</title>
+    <link rel="stylesheet" href="./css/ContactoForm.css">
+    <title>Productos - Tienda Sweet Moon</title>
 </head>
-
 
 <body>
     <!--Inicio Header -->
@@ -41,15 +40,16 @@
                                 <a href="./productos.html">Productos</a>
                             </li>
                             <li style="margin-right: 11px !important">
-                                <a href="./Contacto.html">Contacto</a>
+                                <a href="#">Contacto</a>
                             </li>
+
                         </ul>
                     </div>
                     <!-- Pedido -->
                     <div class="buy_btn" style="margin-left: 50px !important">
                         <span>
                             <i class="fa fa-shopping-cart fs-18 m-r-10" aria-hidden="true" title="Carrito"></i>
-                            <a href="#" target="_blank">Pedido</a>
+                            <a href="#">Pedido</a>
                         </span>
                     </div>
                 </div>
@@ -58,78 +58,89 @@
     </header>
     <!-- Fin Header-->
 
-    <!-- Inicio Carrousel -->
-
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
+    <!-- Inicio form contacto -->
+   
+    <div class="container-items">
+	<div class="formulario">			
+      <h1>Formulario de contacto</h1>
+				<h3>Contactate con nosotros</h3>
 
 
-        <!-- Imagenes -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/productos/Postres/6 (1).jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="./img/productos/Postres/6 (2).jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-                <img src="./img/productos/Postres/21.jpg" class="d-block w-100" alt="..." />
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+					<form  method="post">				
 
-    <!-- Fin  Carrousel -->
+						
+								<p>
+									<label for="nombre" class="colocar_nombre">Nombre
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Mail">
+								</p>
+						
+								<p>
+									<label for="telefono" class="colocar_telefono">Teléfono
+									</label>
+										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
+								</p>		
+							
+									
+							
+								
+							
+								<p>
+									<label for="mensaje" class="colocar_mensaje">Mensaje
+										<span class="obligatorio">*</span>
+									</label>                     
+                               		  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
 
-    <!-- Inicio contenido principal -->
-    <main>
-        <h2>La opinion de nuestros clientes</h2>
-        <section class="grid-container">
-            <div>
-                <img class="grid-item" src="./img/clientes/testimonials-1.jpg" alt="" />
-            </div>
-            <div>
-                <img class="grid-item" src="./img/clientes/testimonials-2.jpg" alt="" />
-            </div>
-            <div>
-                <img class="grid-item" src="./img/clientes/testimonials-5.jpg" alt="" />
-            </div>
-        </section>
-    </main>
+								<p class="aviso">
+									<span class="obligatorio"> * </span>los campos son obligatorios.
+								</p>					
+						
+					</form>
+		</div>	
+	</div>
 
-    <!-- Fin contenido principal -->
+
+    
+    <!-- Emergente -->
+    <dialog id="modal">
+        <h2>Producto Añadido</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path fill="#63E6BE"
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
+        </svg>
+        <p>El producto ha sido añadido correctamente al carrito</p>
+        <button id="btn-cerrar-modal" type="button" onclick="window.modal.close();">Cerrar</button>
+    </dialog>
+
+    <!-- fin Emergente -->
 
     <!--  Footer -->
     <footer class="footer">
         <div class="footer_nav">
             <ul class="main_menu">
                 <li style="margin-right: 11px !important">
-                    <a href="./index.html">Inicio</a>
+                    <a href="/index.html">Inicio</a>
                 </li>
                 <li style="margin-right: 11px !important">
                     <a href="./aboutme.html">Sobre mí</a>
                 </li>
                 <li style="margin-right: 11px !important">
-                    <a href="./productos.html">Productos</a>
+                    <a href="/productos.html">Productos</a>
                 </li>
                 <li style="margin-right: 11px !important">
-                    <a href="#">Contacto</a>
+                    <a href="./Contacto.html">Contacto</a>
                 </li>
             </ul>
             <a href="https://www.instagram.com/sweetmoon_cake2/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -143,6 +154,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./app/main.js"></script>
 </body>
 
 </html>
