@@ -40,7 +40,7 @@
                                 <a href="./productos.html">Productos</a>
                             </li>
                             <li style="margin-right: 11px !important">
-                                <a href="#">Contacto</a>
+                                <a href="./Contacto.html">Contacto</a>
                             </li>
 
                         </ul>
@@ -59,59 +59,62 @@
     <!-- Fin Header-->
 
     <!-- Inicio form contacto -->
-   
+
     <div class="container-items">
-	<div class="formulario">			
-      <h1>Formulario de contacto</h1>
-				<h3>Contactate con nosotros</h3>
+        <div class="formulario">
+            <h1>Formulario de contacto</h1>
+            <h3>Contactate con nosotros</h3>
 
 
-					<form  method="post">				
-
-						
-								<p>
-									<label for="nombre" class="colocar_nombre">Nombre
-										<span class="obligatorio">*</span>
-									</label>
-										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
-								</p>
-							
-								<p>
-									<label for="email" class="colocar_email">Email
-										<span class="obligatorio">*</span>
-									</label>
-										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Mail">
-								</p>
-						
-								<p>
-									<label for="telefono" class="colocar_telefono">Teléfono
-									</label>
-										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
-								</p>		
-							
-									
-							
-								
-							
-								<p>
-									<label for="mensaje" class="colocar_mensaje">Mensaje
-										<span class="obligatorio">*</span>
-									</label>                     
-                               		  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                               	</p>	  								
-							
-								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-								<p class="aviso">
-									<span class="obligatorio"> * </span>los campos son obligatorios.
-								</p>					
-						
-					</form>
-		</div>	
-	</div>
+            <form method="post">
 
 
-    
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nombre">
+                </p>
+
+                <p>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Mail">
+                </p>
+
+                <p>
+                    <label for="telefono" class="colocar_telefono">Teléfono
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Teléfono">
+                </p>
+
+
+
+
+
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..."></textarea>
+                </p>
+
+                <button type="submit" name="enviar_formulario" id="enviar">
+                    <p>Enviar</p>
+                </button>
+
+                <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+
+
     <!-- Emergente -->
     <dialog id="modal">
         <h2>Producto Añadido</h2>
